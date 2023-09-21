@@ -1,32 +1,49 @@
 /* start contact styles */
 .contact-wrapper {
-    height: 40px;
+    min-height: 40px;
     background-color: var(--contact-wrapper-color);
 }
 
-.company-name span {
+.company-name h3{
     font-size: 15px;
 }
 
-.social-media{
-    direction: ltr;
-}
 
-.social-media a i {
-    text-align: center;
-    width: 38px;
+.social-media i {
     font-size: 18px;
-    margin: 0 2px 0 0;
-    color: white;
+    width: var(--bs-contact-wrapper-icon-size);
     padding: 10px;
     transition: 0.25s linear;
 }
 
-.social-media i:hover {
+.social-media img {
+    width: var(--bs-contact-wrapper-icon-size);
+    height: var(--bs-contact-wrapper-icon-size);
+    padding: 10px;
+    transition: 0.25s linear;
+}
+
+.social-media i:hover,.social-media img:hover {
     transform: scale(1.2);
+}
+
+.toggler-social {
+    font-size: 15px;
+    box-shadow: none!important;
+}
+
+.ir-social::after{
+    content: '';
+    display: none;
 }
 
 /* end contact styles */
 
 /* start media queries custom */
+@media only screen and (min-width: 768px) {
+    .contact-wrapper {
+        min-height: 0;
+        height: 40px;
+    }
+}
 /* end media queries custom */
