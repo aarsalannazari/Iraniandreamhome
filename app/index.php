@@ -18,14 +18,7 @@
 <body dir="rtl">
   <!--==================== start noscript section ====================-->
 
-  <noscript>
-    <div style="z-index: 1000"
-      class="d-flex position-fixed bg-white align-items-center justify-content-center vh-100 vw-100">
-      <p class="position-fixed text-danger" style="font-size: 40px">
-        لطفا جاوا اسکریپت مرورگر خود را روشن کنید !<span class="d-block text-center">سپس صفحه را رفرش کنید</span>
-      </p>
-    </div>
-  </noscript>
+  <?php require __DIR__ . "/components/noscript.html" ?>
 
   <!--==================== end noscript section ====================-->
 
@@ -40,7 +33,7 @@
 
   <!--==================== start contact section ====================-->
 
-  <?php require "components/social.html" ?>
+  <?php require  __DIR__ . "/components/social.html" ?>
 
   <!--==================== end contact section ====================-->
 
