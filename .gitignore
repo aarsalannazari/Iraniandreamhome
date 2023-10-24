@@ -1,6 +1,8 @@
 php/
 admin/
 test/
+node_modules/
+package*.json
 *.otf
 *.svg
 *.ttf
@@ -14,4 +16,4 @@ test/
 *.jpeg
 *.ico
 robots.txt
-jquery*.js
+gulpfile.js
