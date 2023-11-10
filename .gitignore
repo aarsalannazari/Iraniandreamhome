@@ -3,6 +3,7 @@ admin/
 bot/
 test/
 node_modules/
+.vscode/
 package*.json
 *.otf
 *.svg

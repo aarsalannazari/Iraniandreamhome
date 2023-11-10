@@ -18,7 +18,7 @@
 <body dir="rtl">
   <!--==================== start noscript section ====================-->
 
-  <?php require __DIR__ . "/components/noscript.html" ?>
+  <?php require "app/src/components/noscript.html" ?>
 
   <!--==================== end noscript section ====================-->
 
@@ -33,7 +33,7 @@
 
   <!--==================== start contact section ====================-->
 
-  <?php require  __DIR__ . "/components/social.html" ?>
+  <?php require "app/src/components/social.html" ?>
 
   <!--==================== end contact section ====================-->
 
