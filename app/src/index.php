@@ -24,8 +24,8 @@
 
   <!--==================== start loading section ====================-->
 
-  <div class="bg-loading">
-    <div class="loading-text">در حال بارگزاری...</div>
+  <div class="bg-loading position-absolute">
+    <div class="loading-text position-absolute h2">در حال بارگزاری...</div>
     <span class="loading"></span>
   </div>
 

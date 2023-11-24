@@ -1,0 +1,30 @@
+@font-face {
+  font: {
+    family: Vazir-Medium;
+    weight: normal;
+    style: normal;
+  }
+  src: url("#{$path-to-fonts}/Vazir-Medium.eot") format(eot);
+  src: url("#{$path-to-fonts}/Vazir-Medium.eot?#iefix")
+      format(embedded-opentype),
+    url("#{$path-to-fonts}/Vazir-Medium.woff") format(woff),
+    url("#{$path-to-fonts}/Vazir-Medium.woff2") format(woff2),
+    url("#{$path-to-fonts}/Vazir-Medium.ttf") format(truetype);
+}
+
+@font-face {
+  font: {
+    family: Vazir-Medium;
+    weight: normal;
+    style: normal;
+  }
+  src: url("#{$path-to-fonts}/Vazir.eot") format(eot);
+  src: url("#{$path-to-fonts}/Vazir.eot?#iefix") format(embedded-opentype),
+    url("#{$path-to-fonts}/Vazir.woff") format(woff),
+    url("#{$path-to-fonts}/Vazir.woff2") format(woff2),
+    url("#{$path-to-fonts}/Vazir.ttf") format(truetype);
+}
+
+* {
+  font-family: $font-family;
+}

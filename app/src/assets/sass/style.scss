@@ -1,0 +1,10 @@
+@charset "UTF-8";
+@import "_variables.scss";
+@import "_mixins.scss";
+@import "_fonts.scss";
+@import "_loading.scss";
+@import "_contact.scss";
+
+a:has(.fa-brands), a:has(.fa-solid) {
+    text-decoration: none;
+}

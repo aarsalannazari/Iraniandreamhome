@@ -1,0 +1,47 @@
+.bg-loading {
+  @include width-height(100%, 100%);
+  @include display("flex", center, center);
+  cursor: wait;
+  background-color: #fff;
+  z-index: 2;
+}
+
+.loading-text {
+  top: 30%;
+  font: {
+    size: $font-size + 14px;
+    weight: 500;
+  }
+}
+
+// .loading {
+//   @include width-height(80px,80px);
+//   border: 9px solid $contact-wrapper-color;
+//   border: {
+//     right: 10px solid transparent;
+//     radius: 50%;
+//   }
+
+//   z-index: 2;
+//   animation: loading 1.5s linear infinite;
+// }
+
+// @keyframes loading {
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }
+
+@media only screen and (max-width: 576px) {
+  .loading-text {
+    font-size: $font-size + 4px;
+  }
+  // .loading {
+  //   @include width-height(50px,50px);
+  //   border: 6px solid $contact-wrapper-color;
+  //   border-right: 5px solid transparent;
+  // }
+}
