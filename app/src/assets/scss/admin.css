@@ -1,0 +1,136 @@
+@font-face {
+  font-family: Vazir-Medium;
+  font-weight: normal;
+  font-style: normal;
+  src: url("/assets/fonts/Vazir-Medium.eot") format(eot);
+  src: url("/assets/fonts/Vazir-Medium.eot?#iefix") format(embedded-opentype), url("/assets/fonts/Vazir-Medium.woff") format(woff), url("/assets/fonts/Vazir-Medium.woff2") format(woff2), url("/assets/fonts/Vazir-Medium.ttf") format(truetype);
+}
+@font-face {
+  font-family: Vazir-Medium;
+  font-weight: normal;
+  font-style: normal;
+  src: url("/assets/fonts/Vazir.eot") format(eot);
+  src: url("/assets/fonts/Vazir.eot?#iefix") format(embedded-opentype), url("/assets/fonts/Vazir.woff") format(woff), url("/assets/fonts/Vazir.woff2") format(woff2), url("/assets/fonts/Vazir.ttf") format(truetype);
+}
+* {
+  font-family: "Vazir-Medium";
+}
+
+/* @font-face {
+  font-family: 'IRANSansWeb_Medium';
+  src: url(../../assets/fonts/IRANSansWeb_Medium.eot) format(eot);
+  src: url(../../assets/fonts/IRANSansWeb_Medium.eot?#iefix) format(embedded-opentype),
+     url(../../assets/fonts/IRANSansWeb_Medium.otf) format(otf), 
+     url(../../assets/fonts/IRANSansWeb_Medium.svg#IRANSansWeb_Medium) format(svg),
+    url(../../assets/fonts/IRANSansWeb_Medium.ttf) format(truetype),
+    url(../../assets/fonts/IRANSansWeb_Medium.woff) format(woff),
+    url(../../assets/fonts/IRANSansWeb_Medium.woff2) format(woff2);
+  font-weight: normal;
+  font-style: normal;
+} */
+/* * {
+  font-family: 'IRANSansWeb_Medium';
+} */
+body {
+  /* background: silver url(../images/background.png) no-repeat;
+  background-size: cover;
+  background-attachment: fixed; */
+  height: 100%;
+  direction: ltr;
+}
+
+#bg-loading {
+  cursor: progress;
+  direction: ltr;
+  width: 100% !important;
+  height: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+#bg-loading div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#loading-text {
+  font-size: 50px;
+}
+
+#loading {
+  width: 60px !important;
+  height: 60px !important;
+  border: 8px solid #e60500;
+  border-right: 8px solid transparent;
+  border-radius: 50%;
+  z-index: 2;
+  animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media only screen and (max-width: 575px) {
+  #loading {
+    width: 50px !important;
+    height: 50px !important;
+    border: 6px solid #e60500;
+    border-right: 6px solid transparent;
+  }
+  #loading-text {
+    font-size: 30px !important;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 899px) {
+  #loading {
+    width: 55px !important;
+    height: 55px !important;
+    border: 7px solid #e60500;
+    border-right: 7px solid transparent;
+  }
+  #loading-text {
+    font-size: 40px !important;
+  }
+}
+/* @font-face {
+  font-family: IRANSansWeb_Medium;
+  src: url(../../assets/fonts/IRANSansWeb_Medium.eot) format(eot);
+  src: url(../../assets/fonts/IRANSansWeb_Medium.eot?#iefix) format(embedded-opentype),
+    url(../../assets/fonts/IRANSansWeb_Medium.otf) format(otf),
+    url(../../assets/fonts/IRANSansWeb_Medium.svg#IRANSansWeb_Medium) format(svg),
+    url(../../assets/fonts/IRANSansWeb_Medium.ttf) format(truetype),
+    url(../../assets/fonts/IRANSansWeb_Medium.woff) format(woff),
+    url(../../assets/fonts/IRANSansWeb_Medium.woff2) format(woff2);
+  font-weight: normal;
+  font-style: normal;
+} */
+/* * {
+  font-family: IRANSansWeb_Medium;
+} */
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button {
+  padding: 4px 8px;
+  color: white;
+  background-color: red;
+  border: red;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e60000;
+}

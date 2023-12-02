@@ -1,0 +1,39 @@
+
+/* @font-face {
+  font-family: IRANSansWeb_Medium;
+  src: url(../../assets/fonts/IRANSansWeb_Medium.eot) format(eot);
+  src: url(../../assets/fonts/IRANSansWeb_Medium.eot?#iefix) format(embedded-opentype),
+    url(../../assets/fonts/IRANSansWeb_Medium.otf) format(otf),
+    url(../../assets/fonts/IRANSansWeb_Medium.svg#IRANSansWeb_Medium) format(svg),
+    url(../../assets/fonts/IRANSansWeb_Medium.ttf) format(truetype),
+    url(../../assets/fonts/IRANSansWeb_Medium.woff) format(woff),
+    url(../../assets/fonts/IRANSansWeb_Medium.woff2) format(woff2);
+  font-weight: normal;
+  font-style: normal;
+} */
+
+/* * {
+  font-family: IRANSansWeb_Medium;
+} */
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  button {
+    padding: 4px 8px;
+    color: white;
+    background-color: red;
+    border: red;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #e60000;
+  }
+  

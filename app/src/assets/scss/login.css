@@ -1,0 +1,230 @@
+/* @font-face {
+  font-family: 'IRANSansWeb_Medium';
+  src: url(../../assets/fonts/IRANSansWeb_Medium.eot) format(eot);
+  src: url(../../assets/fonts/IRANSansWeb_Medium.eot?#iefix) format(embedded-opentype),
+     url(../../assets/fonts/IRANSansWeb_Medium.otf) format(otf), 
+     url(../../assets/fonts/IRANSansWeb_Medium.svg#IRANSansWeb_Medium) format(svg),
+    url(../../assets/fonts/IRANSansWeb_Medium.ttf) format(truetype),
+    url(../../assets/fonts/IRANSansWeb_Medium.woff) format(woff),
+    url(../../assets/fonts/IRANSansWeb_Medium.woff2) format(woff2);
+  font-weight: normal;
+  font-style: normal;
+} */
+/* * {
+  font-family: 'IRANSansWeb_Medium';
+} */
+body {
+  /* background: silver url(../images/background.png) no-repeat;
+  background-size: cover;
+  background-attachment: fixed; */
+  height: 100%;
+  direction: ltr;
+}
+
+#bg-loading {
+  cursor: progress;
+  direction: ltr;
+  width: 100% !important;
+  height: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+#bg-loading div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#loading-text {
+  font-size: 50px;
+}
+
+#loading {
+  width: 60px !important;
+  height: 60px !important;
+  border: 8px solid #ff7f00;
+  border-right: 8px solid transparent;
+  border-radius: 50%;
+  z-index: 2;
+  animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media only screen and (max-width: 575px) {
+  #loading {
+    width: 50px !important;
+    height: 50px !important;
+    border: 6px solid #ff7f00;
+    border-right: 6px solid transparent;
+  }
+  #loading-text {
+    font-size: 30px !important;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 899px) {
+  #loading {
+    width: 55px !important;
+    height: 55px !important;
+    border: 7px solid #ff7f00;
+    border-right: 7px solid transparent;
+  }
+  #loading-text {
+    font-size: 40px !important;
+  }
+}
+h3 {
+  color: #413636;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 15px;
+}
+
+.login-form {
+  height: auto;
+  background-color: #ff8000;
+  padding: 10px;
+  border-radius: 14px;
+}
+
+.input-group-custom {
+  margin: 10px 0 0 0 !important;
+}
+
+input {
+  font-size: 20px !important;
+  outline-color: #fd690d !important;
+  border-color: orange;
+  border-radius: 10px;
+  width: 90%;
+  padding: 8px 5px 5px 5px !important;
+}
+input:hover {
+  background-color: #e9e9e9;
+}
+input::placeholder {
+  font-size: 20px !important;
+  color: #d95d15;
+}
+
+#show-hide {
+  color: green;
+  font-size: 25px;
+  margin: 0 5px 0 0 !important;
+}
+
+#login {
+  margin: 20px auto 0 auto !important;
+  font-size: 20px;
+  padding: 2px 5px 2px 5px !important;
+  color: #fff;
+  background-color: #ff4000;
+  border-color: #ff4000;
+  border-radius: 10%;
+  transition: 0.25s linear;
+}
+#login:hover {
+  background-color: #e60000;
+  border-color: #e60000;
+  cursor: pointer;
+}
+
+.login-cover {
+  text-align: center;
+}
+
+.error {
+  font-size: 15px;
+  color: red;
+}
+
+@media only screen and (max-width: 575px) {
+  h3 {
+    font-size: 20px;
+    margin: 10px;
+  }
+  .login-form {
+    min-width: 200px;
+  }
+  input {
+    font-size: 15px !important;
+    padding: 0 5px 0 5px !important;
+    border-radius: 7px;
+  }
+  input::placeholder {
+    font-size: 15px !important;
+  }
+  .input-group-custom {
+    margin: 10px 0 0 0 !important;
+  }
+  .input-group-custom input:focus {
+    border-color: orange !important;
+    outline: auto 1px;
+    box-shadow: none !important;
+  }
+  .input-group-custom .input-group-text-custom,
+  .input-group-custom input,
+  .input-group-custom label {
+    padding: 1px 5px 0 5px !important;
+  }
+  #show-hide {
+    font-size: 12px;
+    margin-left: 0;
+  }
+  #login {
+    font-size: 15px;
+    margin-left: 0;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 899px) {
+  .login-form {
+    min-width: 50%;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  input {
+    font-size: 17px;
+    padding: 5px 5px 3px 5px !important;
+  }
+  input::placeholder {
+    font-size: 17px;
+  }
+  #show-hide {
+    font-size: 20px;
+    margin-left: 0;
+  }
+  #login {
+    font-size: 17px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .login-form {
+    min-width: 450px;
+  }
+}
+@font-face {
+  font-family: Vazir-Medium;
+  font-weight: normal;
+  font-style: normal;
+  src: url("/assets/fonts/Vazir-Medium.eot") format(eot);
+  src: url("/assets/fonts/Vazir-Medium.eot?#iefix") format(embedded-opentype), url("/assets/fonts/Vazir-Medium.woff") format(woff), url("/assets/fonts/Vazir-Medium.woff2") format(woff2), url("/assets/fonts/Vazir-Medium.ttf") format(truetype);
+}
+@font-face {
+  font-family: Vazir-Medium;
+  font-weight: normal;
+  font-style: normal;
+  src: url("/assets/fonts/Vazir.eot") format(eot);
+  src: url("/assets/fonts/Vazir.eot?#iefix") format(embedded-opentype), url("/assets/fonts/Vazir.woff") format(woff), url("/assets/fonts/Vazir.woff2") format(woff2), url("/assets/fonts/Vazir.ttf") format(truetype);
+}
+* {
+  font-family: "Vazir-Medium";
+}

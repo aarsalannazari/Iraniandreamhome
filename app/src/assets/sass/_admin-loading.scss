@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+/* @font-face {
+  font-family: 'IRANSansWeb_Medium';
+  src: url(../../assets/fonts/IRANSansWeb_Medium.eot) format(eot);
+  src: url(../../assets/fonts/IRANSansWeb_Medium.eot?#iefix) format(embedded-opentype),
+     url(../../assets/fonts/IRANSansWeb_Medium.otf) format(otf), 
+     url(../../assets/fonts/IRANSansWeb_Medium.svg#IRANSansWeb_Medium) format(svg),
+    url(../../assets/fonts/IRANSansWeb_Medium.ttf) format(truetype),
+    url(../../assets/fonts/IRANSansWeb_Medium.woff) format(woff),
+    url(../../assets/fonts/IRANSansWeb_Medium.woff2) format(woff2);
+  font-weight: normal;
+  font-style: normal;
+} */
+
+/* * {
+  font-family: 'IRANSansWeb_Medium';
+} */
+
+body {
+  /* background: silver url(../images/background.png) no-repeat;
+  background-size: cover;
+  background-attachment: fixed; */
+  height: 100%;
+  direction: ltr;
+}
+
+#bg-loading {
+  cursor: progress;
+  direction: ltr;
+  @include width-height(100%, 100%);
+  @include display(flex, center, center);
+  z-index: 2;
+  div {
+    @include display(flex, space-between, center);
+  }
+}
+
+#loading-text {
+  font-size: 50px;
+}
+#loading {
+  @include width-height(60px, 60px);
+  border: 8px solid $loading-color;
+  border-right: 8px solid transparent;
+  border-radius: 50%;
+  z-index: 2;
+  animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  #loading {
+    @include width-height(50px, 50px);
+    border: 6px solid $loading-color;
+    border-right: 6px solid transparent;
+  }
+
+  #loading-text {
+    font-size: 30px !important;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 899px) {
+  #loading {
+    @include width-height(55px, 55px);
+    border: 7px solid $loading-color;
+    border-right: 7px solid transparent;
+  }
+  #loading-text {
+    font-size: 40px !important;
+  }
+}

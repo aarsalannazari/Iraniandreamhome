@@ -1,13 +1,13 @@
 @mixin width-height($width, $height) {
-  width: $width;
-  height: $height;
+  width: $width!important;
+  height: $height!important;
 }
 
 @mixin margin-padding($top, $right, $bottom, $left, $margin: true) {
-  @if ($margin == "true") {
-    margin: $top $right $bottom $left;
+  @if ($margin == true) {
+    margin: $top $right $bottom $left!important;
   } @else {
-    padding: $top $right $bottom $left;
+    padding: $top $right $bottom $left!important;
   }
 }
 
